@@ -1,0 +1,42 @@
+export const coupons = [
+  {
+    code: "SAVE10",
+    reward: "10% off",
+    created_at: "2023-11-01",
+    updated_at: "2023-11-01",
+    activated_at: "2023-11-02",
+    deactivated_at: "2023-11-10",
+  },
+  {
+    code: "FREESHIP",
+    reward: "Free Shipping",
+    created_at: "2023-10-25",
+    updated_at: "2023-10-30",
+    activated_at: "2023-10-31",
+    deactivated_at: "2023-11-15",
+  },
+  {
+    code: "SALE20",
+    reward: "20% off",
+    created_at: "2023-11-02",
+    updated_at: "2023-11-02",
+    activated_at: "2023-11-03",
+    deactivated_at: "2023-11-20",
+  },
+  {
+    code: "DISCOUNT15",
+    reward: "15% off",
+    created_at: "2023-10-28",
+    updated_at: "2023-11-01",
+    activated_at: "2023-11-03",
+    deactivated_at: "2023-11-15",
+  },
+  {
+    code: "FLASHSALE",
+    reward: "50% off",
+    created_at: "2023-10-29",
+    updated_at: "2023-10-30",
+    activated_at: "2023-10-30",
+    deactivated_at: "2023-11-05",
+  },
+];
