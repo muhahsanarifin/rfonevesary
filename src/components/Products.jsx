@@ -123,13 +123,13 @@ export const Collection = () => {
 
       <ul
         className={
-          products.length
+          products?.length
             ? "mt-4 grid gap-4 sm:grid-cols-1 grid-cols-4"
             : "flex justify-center"
         }
         id="productCollection"
       >
-        {products.length ? (
+        {products?.length ? (
           products.slice(0, end).map((product) => (
             <li key={product.id} className="relative">
               {product.discount !== 0 ? (
@@ -293,7 +293,7 @@ export const Cart = () => {
     await promise.body(
       dispatch(
         historyAction.order(
-          orderHistory.data.length < 1
+          orderHistory?.data?.length < 1
             ? [{ ...body, ...bodySD }]
             : orderHistory.data.concat([{ ...body, ...bodySD }])
         )
@@ -576,7 +576,7 @@ export const Order = () => {
     await promise.body(
       dispatch(
         historyAction.order(
-          orderHistory.data.length === 0
+          orderHistory?.data.length === 0
             ? [
                 {
                   ...body,
@@ -602,7 +602,7 @@ export const Order = () => {
     await promise.body(
       dispatch(
         historyAction.detail(
-          orderDetailHistory.products.length === 0
+          orderDetailHistory?.products?.length === 0
             ? [{ ...order.data, qty: body.qty, subtotal: body.subtotal }]
             : orderDetailHistory.products.concat([
                 { ...order.data, qty: body.qty, subtotal: body.subtotal },
