@@ -30,16 +30,6 @@ const Header = () => {
 
     await promise.body(dispatch(authAction.retriveAllDataGuest(RADGBody)));
 
-    if (allDataGuest.data?.length > 0) {
-      await promise.body(
-        dispatch(
-          authAction.retriveAllDataGuest([
-            ...new Map(allDataGuest?.data.map((m) => [m.id, m])).values(),
-          ])
-        )
-      );
-    }
-
     await promise.body(dispatch(authAction.logout()));
 
     await promise.body(
@@ -61,7 +51,6 @@ const Header = () => {
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="flex items-center justify-end gap-4 sm:gap-0">
           <div className="flex items-center gap-4">
-
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle">
                 <div className="indicator">
