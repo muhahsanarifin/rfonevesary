@@ -286,7 +286,7 @@ export const ShippingDetail = ({ bodySD, handleInputChangeSD }) => {
 
   return (
     <div className="my-8">
-      <div className="text-medium font-semibold flex gap-x-2 items-center">
+      <div className="text-medium font-semibold flex gap-x-2 items-center sm:my-2">
         <FaLocationDot />
         <span>Shipping Detail</span>
       </div>

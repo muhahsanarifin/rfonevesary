@@ -59,7 +59,7 @@ const Header = () => {
   return (
     <header className="bg-gray-50">
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-end gap-4">
+        <div className="flex items-center justify-end gap-4 sm:gap-0">
           <div className="flex items-center gap-4">
 
             <div className="dropdown dropdown-end">

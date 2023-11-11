@@ -16,7 +16,7 @@ const Dashboard = () => {
       {reward?.isVisible ? (
         <>{auth?.isLogin ? <Toast.Reward /> : null}</>
       ) : null}
-      <section className="mx-24 sm:mx-0 my-24 sm:my-0">
+      <section className="mx-24 my-24 sm:my-0 sm:mx-6">
         <Crousel />
       </section>
       <section className="mx-24 sm:mx-0">

@@ -105,7 +105,7 @@ export const Collection = () => {
   return (
     <div className="mx-auto max-w-screen-xl py-8 sm:px-6 sm:py-12 lg:px-8">
       <header>
-        <h2 className="text-2xl font-bold text-teal-700 sm:text-3xl">
+        <h2 className="text-2xl font-bold text-teal-700 sm:text-2xl">
           <a href="#productCollection">Product Collection</a>
         </h2>
 
@@ -876,7 +876,7 @@ export const OrderDetailHistory = () => {
           <Button.Previous target={-1} title={"History"} />
         </div>
 
-        <div className="max-w-fit rounded-xl px-6 py-4 shadow-xl hover:shadow-sm mt-6 flex items-center gap-8 text-xs">
+        <div className="max-w-fit rounded-xl px-6 py-4 shadow-xl hover:shadow-sm mt-6 flex items-center gap-8 text-xs sm:flex sm:flex-wrap">
           <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
             <div className="mt-1.5 sm:mt-0">
               <p className="text-teal-700 font-medium">Order ID</p>

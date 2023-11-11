@@ -6,7 +6,7 @@ import { feedAction } from "../redux/reducers/feed";
 export const Success = ({ msg }) => {
   return (
     <div className="toast toast-end">
-      <div className="alert alert-success">
+      <div className="alert alert-success sm:flex sm:items-center sm:justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="stroke-current shrink-0 h-6 w-6"

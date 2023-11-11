@@ -39,9 +39,9 @@ export const Intro = () => {
     );
   };
   return (
-    <div className="mt-8 mx-20 flex gap-x-4">
+    <div className="mt-8 mx-20 flex gap-x-4 sm:mx-0">
       <div>
-        <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">
+        <h1 className="text-2xl font-bold text-gray-900 sm:text-2xl">
           <span className="text-teal-700">Welcome</span>, {auth.data?.username}
           🖐
         </h1>
